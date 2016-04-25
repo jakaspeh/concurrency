@@ -16,7 +16,7 @@ message("   ")
 # SETTING CXX FLAGS
 ######################################################################
 
-set(CMAKE_CXX_FLAGS "-Wall -pthread -std=c++11 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_CXX_FLAGS "-Wall -pthread -std=c++11 -fopenmp ${CMAKE_CXX_FLAGS}")
 
 file(GLOB source-files RELATIVE ${CMAKE_SOURCE_DIR} *.cpp)
 
