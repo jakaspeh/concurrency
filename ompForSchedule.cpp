@@ -225,7 +225,7 @@ void scheduleRuntime(std::vector< std::vector<int> >& vectors,
 {
 #pragma omp parallel num_threads(4), shared(vectors, n)
     {    
-#pragma omp for schedule(auto)
+#pragma omp for schedule(runtime)
         for (int i = 0; i < n; i++)
         {
             vectors[omp_get_thread_num()].push_back(i);
